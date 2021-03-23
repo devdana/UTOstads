@@ -228,3 +228,99 @@ body {
     line-height: 30px;
     color: #33d629;
 }
+#stats h1 {
+    font-size: 18px;
+    margin-bottom: 30px;
+    width: fit-content;
+    border-bottom: 2px solid;
+    padding-bottom: 10px;
+    overflow: hidden;
+    display: block;
+    color: rgb(14, 0, 211);
+    font-weight: 100;
+}
+.uad {
+    margin-top: 20px;
+    overflow: hidden;
+}
+.uad .cell {
+    width:50%;
+    text-align: center;
+    float: right;
+    min-height:80px;
+}
+.uad .cell .mdi {
+    font-size: 30px;
+    display: block;
+    text-align: center;
+    margin-top: 4px;
+}
+.uad .cell .title {
+    font-size: 14px;
+    display: block;
+    color: #3a3a3e;
+}
+.uad .cell .val {
+    font-size: 18px;
+    display: block;
+    color: #000;
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
+.uad .cell:nth-child(odd) {
+    border-left: 1px solid #ddd;
+}
+.uad .cell:nth-child(1) .mdi {
+    color: #00bd1f;
+}
+.uad .cell:nth-child(2) .mdi {
+    color: #ec2d2d;
+}
+.vote_distro {
+    overflow: hidden;
+    margin-top: 30px;
+}
+.vote_distro .stat_section {
+    width: 50%;
+    margin-bottom: 30px;
+    float: right;
+}
+.stat_section.wide {
+    width: 100% !important;
+}
+.stat_section h2 {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 100;
+    display: block;
+    margin-bottom: 20px;
+}
+canvas {
+    width: 100% !important;
+}
+.vote_distro .guide {
+    width: 100% !important;
+    display: block;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+.vote_distro h3 {
+    font-weight: 100;
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 10px;    
+    margin-bottom: 20px;
+}
+.vote_distro .guide div {
+    width: 20%;
+    font-size: 13px;
+    float: right;
+}
+.vote_distro .guide div div {
+    width: 17px;
+    height: 17px;
+    border-radius: 6px;
+    float: right;
+    margin-left: 8px;
+}

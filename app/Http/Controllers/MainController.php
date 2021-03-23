@@ -196,6 +196,15 @@ dana.mr8822@gmail.com";
             {
             "inline_keyboard":[
             [{"text":"🌟 به این استاد رای دهید","url":"'.env('APP_URL').'/vote/'.$subject->id.'?cred='.$user->chatId.'"}]
+           ';
+           if($subject->hasVotes()) {
+               $keyboard=$keyboard.'
+               ,[
+                {"text":"📊 نتایج نظرسنجی","url":"'.env('APP_URL').'/stats/'.$subject->id.'"}
+            ]
+               ';
+           }
+           $keyboard=$keyboard.'
             ]
             }
             ';

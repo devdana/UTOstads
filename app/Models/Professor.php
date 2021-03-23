@@ -34,4 +34,35 @@ class Professor extends Model
         }
         return 'هیچ نظری برای استاد ثبت نشده.';
     }
+    public function bestSection() {
+        $sections=[
+            ['teaching','تدریس'],
+            ['behaviour','اخلاق'],
+            ['workPreassure','فشار درسی'],
+            ['grading','نمره دهی'],
+        ];
+        $result = $sections[0];
+        foreach($sections as $i) {
+            if($this->score($i[0])>=$this->score($result[0])) {
+                $result=$i;
+            }
+        }
+        return $result[1];
+    }
+    
+    public function worstSection() {
+        $sections=[
+            ['teaching','تدریس'],
+            ['behaviour','اخلاق'],
+            ['workPreassure','فشار درسی'],
+            ['grading','نمره‌دهی'],
+        ];
+        $result = $sections[0];
+        foreach($sections as $i) {
+            if($this->score($i[0])<=$this->score($result[0])) {
+                $result=$i;
+            }
+        }
+        return $result[1];
+    }
 }

@@ -57,4 +57,16 @@ class VoteController extends Controller
         $user->backHome();
         return view('Done');
     }
+    public function Stats(Professor $professor) {
+        if(!$professor->hasVotes()) {
+            return "No Votes Yet.";
+        }
+        $sections = [
+            ['teaching','کیفیت تدریس'],
+            ['behaviour','اخلاق'],
+            ['grading','نمره دهی'],
+            ['workPreassure','فشار کاری'],
+        ];
+        return view('Stats',['professor'=>$professor,'sections'=>$sections]);
+    }
 }

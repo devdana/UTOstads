@@ -7,3 +7,4 @@ Route::get('/293118475064897654323987/makeColleges',[App\Http\Controllers\MainCo
 Route::get('/293118475064897654323987/makeProfessors',[App\Http\Controllers\MainController::class,'Proffs']);
 Route::get('/vote/{professor}',[App\Http\Controllers\VoteController::class,'New']);
 Route::post('/vote/{professor}',[App\Http\Controllers\VoteController::class,'Store']);
+Route::get('/stats/{professor}',[App\Http\Controllers\VoteController::class,'Stats']);
