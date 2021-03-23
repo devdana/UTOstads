@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box !important;
+    padding: 0;
+    margin: 0;
+    font-family: IRANYekanWeb;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button:focus {
+    outline: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+html {
+    height: 100%;
+}
+
+@font-face {
+    font-family: 'IRANYekanWeb';
+    src: url('/assets/fonts/IRANYekanWeb.eot');
+    src: url('/assets/fonts/IRANYekanWeb.eot?#iefix') format('embedded-opentype'),
+    url('/assets/fonts/IRANYekanWeb.svg#IRANYekanWeb') format('svg'),
+    url('/assets/fonts/IRANYekanWeb.ttf') format('truetype'),
+    url('/assets/fonts/IRANYekanWeb.woff') format('woff'),
+    url('/assets/fonts/IRANYekanWeb.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font: 14px IRANYekanWeb;
+    direction: rtl;
+    background: #fff;
+}
+
+.container {
+    width: 1050px;
+    margin: 30px auto;
+}
+
+.header {
+    margin: 10px;
+    width: 100%;
+}
+
+.header .logo {
+    width: 400px;
+    float: right;
+}
+
+.header .logo img {
+    height: 50px;
+    float: right;
+    display: block;
+}
+
+.header .logo div {
+    float: right;
+    padding-right: 10px;
+}
+
+.header .logo h1 {
+    font-size: 19px;
+    font-weight: 100;
+    color: #2C333F;
+}
+
+.header .logo p {
+    font-size: 14px;
+    color: #4a5568;
+}
+
+.header .auth {
+    float: left;
+}
+
+.header .auth #unauthenticated a {
+    color: #0070f3;
+    display: block;
+    float: left;
+    margin-right: 30px;
+    line-height: 30px;
+}
+
+.header .auth #unauthenticated a.prime {
+    background: #0070f3;
+    color: #fff;
+    padding: 0 10px;
+    display: block;
+    border-radius: 6px;
+}
+
+.header {
+    overflow: hidden;
+}
+
+.site_menu {
+    list-style: none;
+    padding-right: 12px;
+    display: block;
+    background: #fff;
+    width: 100%;
+    height: 40px;
+    margin-top: 25px;
+}
+
+.site_menu li {
+    float: right;
+    display: block;
+    margin-left: 24px;
+    color: #2d3748;
+}
+
+.site_menu li:hover {
+    color: #0070f3;
+    transition: 0.2s;
+}
+
+.campaign {
+    background: url("/assets/road.jpg");
+    height: 210px;
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 6px;
+    color: #fff;
+    background-position: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+.campaign h3 {
+    font-size: 42px;
+    display: block;
+    font-weight: 100;
+    margin-top: 18px;
+    color: #fff;
+}
+
+.campaign h4 {
+    font-size: 15px;
+    font-weight: 100;
+    margin-top: 10px;
+
+}
+
+.campaign p {
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.campaign a {
+    width: fit-content;
+    display: block;
+    padding: 4px 10px;
+    line-height: 30px;
+    background: #ffffff47;
+    color: #ffffff;
+    margin: 10px auto;
+    border-radius: 4px;
+}

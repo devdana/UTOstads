@@ -1,0 +1,230 @@
+* {
+    box-sizing: border-box !important;
+    padding: 0;
+    margin: 0;
+    font-family: IRANYekanWeb;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    outline: none;
+    border: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+html {
+    height: 100%;
+}
+
+@font-face {
+    font-family: 'IRANYekanWeb';
+    src: url('/fonts/IRANYekanWeb.eot');
+    src: url('/fonts/IRANYekanWeb.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/IRANYekanWeb.svg#IRANYekanWeb') format('svg'),
+    url('/fonts/IRANYekanWeb.ttf') format('truetype'),
+    url('/fonts/IRANYekanWeb.woff') format('woff'),
+    url('/fonts/IRANYekanWeb.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font: 14px IRANYekanWeb;
+    direction: rtl;
+    background: #fff;
+}
+
+.container {
+    position: relative;
+    width: 490px;
+    max-width: 100%;
+    padding: 0 10px;
+    padding-bottom: 40px;
+    margin: 30px auto;
+}
+.profile {
+    position: relative;
+    overflow: hidden;
+}
+.profile img {
+    float: right;
+    border-radius: 6px;
+    width: 80px;
+    /* box-shadow: 0px 0px 2px rgb(0 0 0 / 48%); */
+    border: 1px solid #dddd;
+}
+.profile .info {
+    float: right;
+    margin-right: 20px;
+}
+.profile h1 {
+    font-size: 20px;
+    font-weight: 100;
+}
+.profile h2 {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #0070f3;
+    font-weight: 100;
+}
+.colleges {
+    margin-top: 10px;
+}
+.colleges span {
+        display: block;
+        float: right;
+        margin-left: 10px;
+        padding: 6px 7px;
+        background: #f3f3f3;
+        color: #2c333f;
+        font-size: 14px;
+        border-radius: 4px;
+        line-height: 24px;
+        border: 1px solid #eaeaea;
+}
+.colleges span .mdi{
+    line-height: 22px;
+    font-size: 19px;
+    float: right;
+    margin-left: 6px;
+}
+.pre_vote {
+    margin-top: 40px;
+}
+.pre_vote p {
+    font-size: 15px;
+    line-height: 32px;
+    /* text-align: center; */
+}
+#start_survey {
+    background: #0070f3;
+    color: #fff;
+    line-height: 30px;
+    display: block;
+    margin: 16px auto;
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 4px 15px;
+    width: fit-content;
+}
+#start_survey .mdi {
+    float: right;
+    font-size: 20px;
+    margin-left: 6px;
+}
+.section {
+    display: none;
+    margin-top: 40px;
+}
+.section p{
+    line-height: 30px;
+    font-size: 17px;
+    margin-bottom: 14px;
+}
+.section p .mdi {
+    float: right;
+    margin-left: 6px;
+    font-size: 24px;
+    color: #0070f3;
+}
+.section .options {
+    overflow: hidden;
+}
+.section .options .option {
+    width: 100%;
+    display: block;
+    float: right;
+    margin-left: 10px;
+    height: 44px;
+    margin-bottom: 10px;
+    border: 1px solid #eae7e7;
+    border-radius: 3px;
+    padding: 0 10px;
+    line-height: 41px;
+    cursor: pointer;
+}
+.section .options .option.active {
+    color:#0070f3 !important;
+    border-color:#0070f3 !important;
+}
+.section .options .option.active .mdi{
+    color:#0070f3 !important;
+    border-color:#0070f3 !important;
+}
+.section .options .option .mdi {
+    float: right;
+    font-size: 23px;
+    height: 43px;
+    border-left: 1px solid #eae7e7;
+    padding-left: 10px;
+    margin-left: 10px;
+    color: #3a3a3e;
+}
+
+.nextQuestion {
+    background: #0070f3;
+    color: #fff;
+    display: none;
+    line-height: 30px;
+    margin: 10px auto;
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 4px 15px;
+    width: fit-content;
+    display: block;
+    display: none;
+}
+.nextQuestion .mdi {
+    float: right;
+    font-size: 20px;
+    margin-left: 6px;
+}
+
+#submit {
+    background: #ffca08;
+    color: #464242;
+    display: none;
+    line-height: 28px;
+    margin: 10px auto;
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 4px 28px;
+    width: fit-content;
+    display: block;
+    display: none;
+}
+#submit .mdi {
+    float: right;
+    font-size: 20px;
+    margin-left: 6px;
+}
+.done {
+    background: #f5f5f5;
+    padding: 8px 8px;
+    border: 1px solid #f1f1f1;
+    border-radius: 6px;
+}
+.done h2{
+    font-size: 17px;
+    color: #545454;
+    font-weight: 100;
+    line-height: 29px;
+}
+.done h2 .mdi{
+    font-size: 26px;
+    margin-left: 10px;
+    float: right;
+    line-height: 30px;
+    color: #33d629;
+}
